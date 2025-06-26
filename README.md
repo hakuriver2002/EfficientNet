@@ -25,7 +25,9 @@
 
 Compound Model Scaling: A Better Way to Scale Up CNNs and EfficientNet
 Traditional approaches to scaling Convolutional Neural Networks (CNNs) often focus on increasing one dimension at a time—depth, width, or image resolution. However, this can lead to suboptimal performance or inefficient use of resources. The Compound Model Scaling method, introduced with EfficientNet, offers a more balanced and principled approach.
+
 Instead of scaling dimensions independently, Compound Scaling uses a compound coefficient to uniformly scale depth, width, and resolution using a fixed set of scaling constants. This method was derived through neural architecture search and enables the model to use parameters more efficiently, achieving higher accuracy with fewer FLOPs and parameters than previous CNNs.
+
 EfficientNet, built on this scaling method, demonstrates state-of-the-art performance on image classification benchmarks while being significantly more lightweight than models like ResNet or Inception.
 ![CompoundModelScaling](https://1.bp.blogspot.com/-Cdtb97FtgdA/XO3BHsB7oEI/AAAAAAAAEKE/bmtkonwgs8cmWyI5esVo8wJPnhPLQ5bGQCLcBGAs/s1600/image4.png)
 
@@ -54,15 +56,18 @@ pip install keras
 ```
 
 ## Screenshots
-### Accuracy Value result
-![Accuracy](https://github.com/user-attachments/assets/3d452a7f-d6b1-45de-b4b1-246090b7b3b7)
-
-### Loss MSE result
-![Loss](https://github.com/user-attachments/assets/6d8e8412-9c0e-4f43-bc0a-9d6ea0a3c514)
+### Accuracy Value & Loss MSE result
+![Accuracy-Loss-Epochs](https://github.com/user-attachments/assets/ca4c03d7-7c4b-446d-ab8d-6ee05c3a6d10)
 
 
-### Accuracy Value with EarlyStopping result
-![AccuracyEarlyStopping](https://github.com/user-attachments/assets/c68802af-8385-4a9b-a14a-2a606c30335c)
+### Classification report
+![Classification-report](https://github.com/user-attachments/assets/55ea5ebe-354f-46a4-88ad-4c230cf45c2c)
 
-### Loss MSE with EarlyStopping result
-![LossEarlyStopping](https://github.com/user-attachments/assets/89b60f89-0974-423e-96b1-1211405c61e1)
+### Matrix miss
+![Matrix-miss](https://github.com/user-attachments/assets/1a9f2659-e830-4a62-84e4-1642e5ab6197)
+
+### Images-true
+![Images-true](https://github.com/user-attachments/assets/b061b094-12ab-42d6-ae17-3ebe46fe7231)
+
+### Images-false
+![Images-false](https://github.com/user-attachments/assets/3922293d-d248-4979-a5a1-f3450867d8c1)

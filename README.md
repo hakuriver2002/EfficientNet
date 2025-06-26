@@ -33,7 +33,7 @@ EfficientNet, built on this scaling method, demonstrates state-of-the-art perfor
 
 ## Installation
 
-Build Backpropagation from the source and install dependencies:
+Build EfficientNet from the source and install dependencies:
 
 ```bash
 git clone https://github.com/hakuriver2002/EfficientNet.git

@@ -23,21 +23,24 @@
 
 ## Overview
 
-Backpropagation is a developer tool that facilitates the development, training, and understanding of convolutional neural networks, specifically demonstrated through MNIST digit classification. It emphasizes scalable, maintainable architecture and inergrates continuous testing and contributor management to support collaborative efforts.
-![Backpropagation](https://github.com/user-attachments/assets/942d297a-3aa2-4fdd-863d-099e0fe2ca3f)
+Compound Model Scaling: A Better Way to Scale Up CNNs and EfficientNet
+Traditional approaches to scaling Convolutional Neural Networks (CNNs) often focus on increasing one dimension at a time—depth, width, or image resolution. However, this can lead to suboptimal performance or inefficient use of resources. The Compound Model Scaling method, introduced with EfficientNet, offers a more balanced and principled approach.
+Instead of scaling dimensions independently, Compound Scaling uses a compound coefficient to uniformly scale depth, width, and resolution using a fixed set of scaling constants. This method was derived through neural architecture search and enables the model to use parameters more efficiently, achieving higher accuracy with fewer FLOPs and parameters than previous CNNs.
+EfficientNet, built on this scaling method, demonstrates state-of-the-art performance on image classification benchmarks while being significantly more lightweight than models like ResNet or Inception.
+![CompoundModelScaling](https://1.bp.blogspot.com/-Cdtb97FtgdA/XO3BHsB7oEI/AAAAAAAAEKE/bmtkonwgs8cmWyI5esVo8wJPnhPLQ5bGQCLcBGAs/s1600/image4.png)
 
 ## Installation
 
 Build Backpropagation from the source and install dependencies:
 
 ```bash
-git clone https://github.com/hakuriver2002/Backpropagation.git
+git clone https://github.com/hakuriver2002/EfficientNet.git
 ```
 
 Navigate to the project directory:
 
 ```bash
-cd Backpropagation
+cd EfficientNet
 ```
 
 You need to install some library of tensorflow keras:
